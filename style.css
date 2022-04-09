@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navigation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(26, 26, 29);
+    position: sticky;
+    top: 0;
+}
+.navigation ul{
+    display: flex;
+    list-style:none;
+    margin: 30px 0px;
+}
+.navigation ul li{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    padding-right: 50px;
+}
+.navigation ul li a{
+    text-decoration: none;
+    color: yellow;
+    padding: 8 px 30 px;
+    transition-property: all;
+    transition-duration: 50 ms;
+    transition-timing-function: 0.5 s;
+    transition-delay: 0.2 s;
+}
+.navigation ul li a:hover{
+    background-color:white;
+    color: rgb(19, 0, 128);
+    box-shadow: 0 0 10px black;
+}
+/*introduction home page*/
+#home{
+    width: 500 px;
+    border: 1px solid black;
+    color: gold;
+    text-align: center;
+    background-image: url('homepage.jpg');
+    background-size: 100% 100%;
+}
+img{
+    height: 480px;
+    width: 500px;
+    border: 5px solid rgb(11, 2, 2);
+    align-items: center;
+    border-radius: 20px;
+}
+#text{
+    font-family:cursive;
+    font-size: 40px;
+    font-style: oblique;
+    text-shadow: 10px;
+}
+#hometext{
+    margin-left: 200px;
+    margin-right: 200px;
+    height: 200px;
+    width:1200px;
+    align-items: center;
+}
+/*about section*/
+#about{
+    display:flex;
+    flex-direction:column;
+    box-sizing: border-box;
+}
+#pic{
+    display: flex;
+}
+#pic img{
+    width:575px;
+    height:600px;
+    border-radius: 0px;
+}
+#intro h1{
+    font-size:5rem;
+    color:aliceblue;
+    margin-bottom:20px;
+}
+#intro{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    font-weight: 100;
+    font-style: italic;
+    flex-flow: wrap;
+    background-image: url('aboutme.jpg');
+    background-size: 100%;
+}
+#text1{
+   text-decoration: none;
+   color: goldenrod;
+   text-shadow: 20px;
+   font-family: cursive;
+}
+/*Education*/
+#education{
+    display: flex;
+    flex-direction: column;
+    padding:30px;
+    background-color: rgb(46, 46, 47);
+}
+.heading{
+    align-content: center;
+    color:aliceblue;
+    font-size: 60px;
+    font-family: cursive;
+    font-style: italic;
+}
+.row{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    background-image: url('education.jpg');
+}
+.box{
+    display:flex;
+    flex-direction:column;
+    width:350px;
+    height:450px;
+    border: 3px solid black;
+    margin:60px;
+    align-items:center;
+    text-align: justify;
+    padding:20px;
+    border-radius: 15px;
+    background: linear-gradient(to bottom, yellow 50%, white 50%);
+    background-size: 100% 200%;
+    transition: all 0.5s ease;
+}
+.box:hover{
+    background-position: left-bottom;
+    color:black;
+    border:none;
+    box-shadow: 0 0 30px red;
+}
+.box img{
+    width: 200px;
+    height:200px;
+    border: 5px solid black;
+}
+#edtext{
+    text-decoration: none;
+    font-size: larger;
+    text-shadow: 15px;
+    color:aqua;
+}
+/*contact Section*/
+#contact{
+    display:flex;
+    flex-direction:column;
+    box-sizing:border-box;
+    background-color: rgba(0, 0, 0, 0.134);
+    background-image: url('contact.jpg');
+    background-size: 100% 100% ;
+}
+.head{
+    align-content: center;
+    color:blanchedalmond;
+    font-size: 50px;
+    font-family: cursive;
+    font-style: italic;
+}
+.form{
+    display:flex;
+    flex-direction: column;
+    box-sizing:border-box;
+    align-items: center;
+    margin:20px 0px;
+}
+.input{
+    padding:18px;
+    margin:15px;
+    width:40%;
+    border:3px solid yellow;
+    border-radius: 10px;
+    outline:none;
+}
+#msg{
+    width:20%;
+    padding:10px;
+    margin:15px;
+    border:3px solid yellow;
+    border-radius: 10px;
+}
+#send{
+    cursor: pointer;
+    box-shadow: 0 0 20px white;
+}
+#connect{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border:3px solid yellow;
+    border-radius: 10px;
+    color:rgb(43, 211, 226);
+    font-weight:bold;
+}
+#connect img{
+    height:40px;
+    width:40px;
+    border: none;
+    outline: none;
+}
